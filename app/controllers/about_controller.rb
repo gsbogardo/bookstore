@@ -1,5 +1,5 @@
 class AboutController < ApplicationController
   def index
-    @page_title = "Bookstore Applictation"
+    @page_title = "About this app"
   end
 end
