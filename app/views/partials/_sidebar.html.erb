@@ -1,1 +1,20 @@
-This is a sidebar
+<% if params[:controller] == 'about' %>
+<div class="well">
+<h3>Location Info</h3>
+<ul>
+    <li>The BookStore</li>
+    <li>Some Address</li>
+    <li>Liverpool, NY 13088</li>
+    <li>Phone: (315)xxx-xxxx</li>
+    <li>Email: support@thebookstore.com</li>
+</ul>
+</div>
+<% end %>
+
+<% if params[:controller] == 'books' && params[:action] == 'index' || params[:action] == 'show' %>
+<div class="list-group">
+    <a href="#" class="list-group-item">Ruby on Rails</a>
+    <a href="#" class="list-group-item">Agile</a>
+    <a href="#" class="list-group-item">Web Development</a>
+</div>
+<% end %>

@@ -1,2 +1,20 @@
-<h1>Books#show</h1>
-<p>Find me in app/views/books/show.html.erb</p>
+<div class="book-show">
+<h2>Ruby on Rails Tutorial</h2>
+<div class="books-show-left">
+    <%= image_tag  "ruby_on_rails_tutorial.jpg" %></div>
+<div class="books-show-right">
+    <h3>Book Info</h3>
+    <ul>
+        <li><strong>Category: </strong>Ruby on Rails</li>
+        <li><strong>Author: </strong>Michael Hartl</li>
+        <li><strong>Publisher: </strong>Addison-Wesley Professional; 4 edition (November 17, 2016)</li>
+        <li><strong>Year: </strong>2016</li>
+        <li><strong>ISBN: </strong>978-0134598628</li>
+        <li><strong>Format: </strong>Kindle</li>
+        <li><strong>Pages: </strong>806</li>
+    </ul>
+    <%= link_to  "Buy for $31.19", "https://www.amazon.com/Ruby-Rails-Tutorial-Addison-Wesley-Professional-dp-0134598628/dp/0134598628/ref=mt_paperback?_encoding=UTF8&me=&qid=1553783046", id: "select-btn", class: "btn btn-success", target: "blank" %>
+</div>
+<div class="clearfix"></div>
+<h4>Excerpt</h4>
+</div>
